@@ -1,0 +1,144 @@
+/* Seu CSS existente */
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.conteiner {
+    margin: auto;
+    background-color: rgb(255, 255, 255);
+    width: 620px;
+    height: 500px; /* Pode precisar ajustar a altura se o conteúdo for maior */
+    border-radius: 15px;
+    padding: 10px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.164);
+}
+
+form {
+    margin: auto;
+    background-color: rgb(255, 195, 247);
+    width: 600px;
+    height: 480px; /* Pode precisar ajustar a altura se o conteúdo for maior */
+    border-radius: 20px;
+    padding: 20px;
+    /* Adicionado para centralizar h1 e alinhar itens, pode ser ajustado */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centraliza itens no eixo cruzado (horizontalmente) */
+}
+
+h1 {
+    margin-bottom: 50px;
+    padding: 10px 10px;
+}
+
+.campos-inputs {
+    position: relative;
+    width: 95%; /* Ajuste a largura conforme necessário */
+    height: 50px;
+    margin: 15px 0; /* Ajuste a margem */
+}
+
+#school {
+    color: rgb(255, 145, 111);
+}
+
+.conteiner-socias {
+    /* Mantenha o display: flex e justify-content: space-between */
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Para alinhar o "OU" verticalmente com os botões */
+    width: 95%; /* Certifique-se de que o contêiner ocupa a largura desejada */
+    margin-bottom: 20px; /* Espaçamento após os botões sociais */
+}
+
+.btn-redes {
+    text-decoration: none;
+    padding: 10px;
+    background-color: transparent;
+    border: 2px solid rgb(46, 46, 46);
+    border-radius: 5px;
+    color: black;
+    flex-grow: 1; /* Permite que os botões cresçam para ocupar o espaço */
+    text-align: center; /* Centraliza o texto dentro do botão */
+    margin: 0 5px; /* Pequena margem entre os botões e o "OU" */
+}
+
+.btn-redes:hover {
+    background-color: pink;
+}
+
+#or {
+    margin: 0 10px; /* Espaçamento ao redor do "OU" */
+    font-weight: bold;
+    text-align: center;
+    white-space: nowrap; /* Evita que o "OU" quebre linha */
+}
+
+input {
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em;
+    background-color: transparent;
+    border-radius: 3px;
+    border: 1px solid black;
+    outline: none;
+    box-shadow: 3px 4px 1px 5px black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+input::placeholder {
+    color: black;
+    padding: 10px;
+}
+
+i {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-13%); /* Talvez ajustar para -50% se não estiver centralizado */
+    font-size: 24px;
+}
+
+#dont {
+    font-weight: lighter;
+    font-size: .8em;
+    margin: 10px 0 20px 0; /* Ajuste a margem inferior */
+}
+
+#here {
+    color: rgb(255, 76, 106);
+    text-decoration: none;
+}
+
+/* Novo estilo para o contêiner do botão de login */
+.botoes-login-container {
+    width: 95%; /* Mesma largura dos campos de input */
+    display: flex;
+    justify-content: flex-end; /* Alinha o conteúdo (botão) à direita */
+    margin-top: 20px; /* Espaçamento acima do botão */
+}
+
+button { /* Este estilo se aplicará ao .btn-login agora */
+    padding: 10px 35px;
+    font-size: 1.2em;
+    background-color: transparent;
+    border-radius: 7px;
+    box-shadow: 2px 3px 1px 4px black;
+    border: 1px solid black;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover {
+    box-shadow: 1px 2px 1px 3px black;
+}
